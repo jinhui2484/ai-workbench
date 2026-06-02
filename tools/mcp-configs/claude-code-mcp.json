@@ -17,6 +17,29 @@
       "url": "http://localhost:18060/mcp",
       "description": "小红书 MCP（需先启动本地服务）",
       "disabled": false
+    },
+    "youtube": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yt-mcp"
+      ],
+      "env": {
+        "YOUTUBE_API_KEY": "YOUR_YOUTUBE_API_KEY",
+        "YOUTUBE_TRANSCRIPT_LANG": "zh"
+      },
+      "description": "YouTube MCP - 视频元数据、字幕转录、频道分析、搜索",
+      "disabled": false
+    },
+    "video": {
+      "command": "video-context-mcp",
+      "args": [],
+      "env": {
+        "Z_AI_API_KEY": "YOUR_ZHIPU_AI_API_KEY",
+        "VIDEO_MCP_DEFAULT_PROVIDER": "glm"
+      },
+      "description": "视频画面分析 MCP - 视频内容深度分析",
+      "disabled": false
     }
   }
 }
