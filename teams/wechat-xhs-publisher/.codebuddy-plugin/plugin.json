@@ -1,0 +1,90 @@
+{
+  "name": "wechat-xhs-publisher",
+  "version": "1.0.0",
+  "description": "An expert team that plans and publishes content to WeChat Official Account and Xiaohongshu",
+  "author": {
+    "name": "Jinhui Zhang",
+    "email": "jinhui.zhang@example.com"
+  },
+  "agents": [
+    "./agents/wechat-xhs-publisher-team-lead.md",
+    "./agents/copywriter.md",
+    "./agents/visual-designer.md",
+    "./agents/wechat-publisher.md",
+    "./agents/xhs-publisher.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "wechat-xhs-publisher-team-lead",
+  "teamInfo": {
+    "leadAgent": "wechat-xhs-publisher-team-lead",
+    "memberAgents": ["copywriter", "visual-designer", "wechat-publisher", "xhs-publisher"]
+  },
+
+  "displayName": {
+    "en": "WeChat & Xiaohongshu Publisher",
+    "zh": "微信小红书发布助手"
+  },
+  "profession": {
+    "en": "WeChat & Xiaohongshu Publisher",
+    "zh": "微信小红书发布助手"
+  },
+  "displayDescription": {
+    "en": "One-click content publishing to WeChat Official Account and Xiaohongshu — from topic planning to writing to publishing, done.",
+    "zh": "一键发布内容到微信公众号和小红书双平台，从选题策划到文案撰写到发布，一站式内容运营。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我写一篇关于[主题]的文章，发微信公众号、小红书或双平台",
+    "en": "Write an article about [topic] and publish to WeChat, Xiaohongshu, or both"
+  },
+  "plugin": "wechat-xhs-publisher",
+  "tags": [
+    { "en": "WeChat & Xiaohongshu Publishing", "zh": "微信小红书发布" },
+    { "en": "Content Creation", "zh": "内容创作" },
+    { "en": "Source-Driven Article", "zh": "素材驱动写作" }
+  ],
+  "quickPrompts": [
+    { "en": "Write an article about [topic] and publish to WeChat, Xiaohongshu, or both", "zh": "帮我写一篇关于[主题]的文章，发微信公众号、小红书或双平台" },
+    { "en": "Write an article based on this link/video/project and publish it", "zh": "帮我根据这个链接/视频/项目写篇文章发出去" },
+    { "en": "Turn my experience into an article and publish it", "zh": "帮我把我的经验总结成文章发出去" }
+  ],
+  "members": [
+    {
+      "id": "wechat-xhs-publisher-team-lead",
+      "displayName": { "en": "Chief Editor", "zh": "主编" },
+      "profession": { "en": "Content Director", "zh": "内容总监" },
+      "avatar": "avatars/wechat-xhs-publisher-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "copywriter",
+      "displayName": { "en": "Copywriter", "zh": "撰稿师" },
+      "profession": { "en": "Content Creator", "zh": "内容创作师" },
+      "avatar": "avatars/copywriter.png",
+      "role": "member"
+    },
+    {
+      "id": "wechat-publisher",
+      "displayName": { "en": "WeChat Ops", "zh": "微运营" },
+      "profession": { "en": "WeChat Operations Expert", "zh": "微信运营专家" },
+      "avatar": "avatars/wechat-publisher.png",
+      "role": "member"
+    },
+    {
+      "id": "xhs-publisher",
+      "displayName": { "en": "XHS Ops", "zh": "红运营" },
+      "profession": { "en": "Xiaohongshu Operations Expert", "zh": "小红书运营专家" },
+      "avatar": "avatars/xhs-publisher.png",
+      "role": "member"
+    },
+    {
+      "id": "visual-designer",
+      "displayName": { "en": "Visual Designer", "zh": "视觉师" },
+      "profession": { "en": "Visual Designer", "zh": "视觉设计师" },
+      "avatar": "avatars/visual-designer.png",
+      "role": "member"
+    }
+  ]
+}
