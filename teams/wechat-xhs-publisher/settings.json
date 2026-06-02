@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "wechat-official-account": {
+      "required": true,
+      "description": "微信公众号 MCP，用于草稿创建和群发"
+    },
+    "xiaohongshu-mcp": {
+      "required": true,
+      "description": "小红书 MCP，用于笔记发布"
+    },
+    "github": {
+      "required": false,
+      "description": "GitHub MCP，用于项目研读和代码扫描（Workflow 4 需要）"
+    },
+    "youtube": {
+      "required": false,
+      "description": "YouTube MCP，用于视频元数据获取和字幕转录（Workflow 4 素材驱动需要）"
+    },
+    "video-context-mcp": {
+      "required": false,
+      "description": "视频画面分析 MCP，用于视频内容深度分析（Workflow 4 素材驱动可选）"
+    }
+  }
+}
